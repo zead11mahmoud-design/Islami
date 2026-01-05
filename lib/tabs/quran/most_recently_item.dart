@@ -13,11 +13,13 @@ class MostRecentlyItem extends StatelessWidget {
     Size screenSize = MediaQuery.of(context).size;
     return InkWell(
       onTap: () {
-        Navigator.of(context).pushNamed(SuraDetiailsScreen.routeName,arguments: sura);
+        Navigator.of(
+          context,
+        ).pushNamed(SuraDetiailsScreen.routeName, arguments: sura);
       },
       child: Container(
         height: double.infinity,
-        width: screenSize.width * 0.7,
+        width: screenSize.width * 0.78,
         padding: EdgeInsets.only(left: 12, right: 8),
         decoration: BoxDecoration(
           color: AppTheme.primary,
