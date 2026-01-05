@@ -5,7 +5,7 @@ import 'package:islami/intro_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:islami/tabs/quran/quran_service.dart';
 import 'package:islami/tabs/quran/sura_detiails_screen.dart';
-// import 'package:islami/tabs/hadeth/hadeth_details_screen.dart';
+import 'package:islami/tabs/hadeth/hadeth_details_screen.dart';
 
 Future<void> main() async {
   await WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +29,7 @@ class IslamiApp extends StatelessWidget {
         IntroScreen.routeName: (_) => IntroScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
         SuraDetiailsScreen.routeName: (_) => SuraDetiailsScreen(),
-        // HadethDetiailsScreen.routeName: (_) => HadethDetiailsScreen(),
+        HadethDetiailsScreen.routeName: (_) => HadethDetiailsScreen(),
       },
       initialRoute: isIntroSeen ? HomeScreen.routeName : IntroScreen.routeName,
     );
